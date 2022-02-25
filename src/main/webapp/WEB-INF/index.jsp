@@ -14,7 +14,7 @@
 	<p class="fs-2">Description: <c:out value="${ book.getDescription() }"></c:out></p>
 	<p class="fs-2">Language: <c:out value="${ book.getLanguage() }"></c:out></p>
 	<p class="fs-2">Number of pages: <c:out value="${ book.getNumOfPages() }"></c:out></p>
-	
+	<a class="btn btn-primary" href="/books">All books</a>
 	<!--Bootstrap -->
 	<script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </body>

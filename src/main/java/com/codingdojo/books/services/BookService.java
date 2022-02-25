@@ -1,5 +1,6 @@
 package com.codingdojo.books.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
@@ -30,5 +31,10 @@ public class BookService {
         } else {
             return null;
         }
+	}
+	// //// find all books ////
+	public List<Book> allBooks(){
+		System.out.println("find-all-books-service: "+bookRepository.findAll());
+		return bookRepository.findAll();
 	}
 }
